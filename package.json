@@ -1,0 +1,26 @@
+{
+  "name": "ajar",
+  "version": "0.1.0",
+  "description": "A minimal, promise-driven XMLHttpRequest-wrapper, promoting REST and JSON",
+  "main": "ajar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stev47/ajar.git"
+  },
+  "keywords": [
+    "ajax",
+    "rest",
+    "json",
+    "request",
+    "xmlhttprequest"
+  ],
+  "author": "Stephan Hilb",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/stev47/ajar/issues"
+  },
+  "homepage": "https://github.com/stev47/ajar#readme"
+}
