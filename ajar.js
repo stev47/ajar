@@ -1,3 +1,5 @@
+"use strict"
+
 function querystring(params) {
     var qstr = []
     for (var key in params)
