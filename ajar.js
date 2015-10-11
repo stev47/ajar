@@ -1,6 +1,6 @@
 function querystring(params) {
-    qstr = []
-    for (key in params)
+    var qstr = []
+    for (var key in params)
         qstr.push(encodeURIComponent(key) + '=' + encodeURIComponent(params[key]))
 
     return qstr.join('&')
