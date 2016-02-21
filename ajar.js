@@ -16,13 +16,15 @@ function request(method, url, gdata, pdata) {
         var req = new XMLHttpRequest()
 
         req.open(method, url)
-        req.setRequestHeader('Accept', 'application/json')
         if (pdata)
             req.setRequestHeader('Content-Type', 'application/json')
 
         req.addEventListener('load', (evt) => {
             if (req.status >= 200 && req.status < 300) {
-                resolve(JSON.parse(req.responseText))
+                if (/application\/json/i.test(req.getResponseHeader('Content-Type')))
+                    resolve(JSON.parse(req.responseText))
+
+                resolve(req)
             } else {
                 reject(req)
             }
