@@ -2,6 +2,8 @@
 
 A minimal, promise-driven XMLHttpRequest-wrapper, promoting REST and JSON.
 
+*WARNING*: Discontinued, use [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) instead
+
 ## Overview
 
 ```javascript
